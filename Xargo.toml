@@ -1,0 +1,2 @@
+[target.avr-atmega328p.dependencies]
+core = { git = "https://github.com/gergoerdi/rust-avr-libcore-mini", rev = "adda44aa91ac517aab6915447592ee4cad26564c" }
