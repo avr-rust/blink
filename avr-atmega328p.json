@@ -1,5 +1,5 @@
 {
-  "llvm-target": "avr",
+  "llvm-target": "avr-unknown-unknown",
   "cpu": "atmega328p",
   "target-endian": "little",
   "target-pointer-width": "16",
