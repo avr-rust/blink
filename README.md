@@ -1,4 +1,4 @@
-# hello_world
+# hello-world
 
 An Hello World Rust application for the AVR.
 
