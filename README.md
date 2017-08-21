@@ -1,6 +1,10 @@
-# hello-world
+# blink
 
-An Hello World Rust application for the AVR.
+An small Hello World Rust application for the AVR.
+
+The program itself toggles a LED on PORTB periodically.
+
+Designed for the ATmega328p.
 
 [How to set up a cross compiler](https://github.com/avr-rust/rust)
 

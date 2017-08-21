@@ -1,5 +1,5 @@
 [package]
-name = "hello_world"
+name = "blink"
 version = "0.1.0"
 authors = ["Dylan McKay <me@dylanmckay.io>"]
 
