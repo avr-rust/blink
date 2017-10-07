@@ -11,7 +11,7 @@ Designed for the ATmega328p.
 # Usage
 
 ```bash
-xargo build --target avr-atmega328p
+xargo build --target avr-atmega328p --release
 
 # there is now an ELF file at target/atmega328p/debug/blink.elf
 ```
