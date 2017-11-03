@@ -20,5 +20,5 @@ You may need to invoke the build like this instead, as the current
 version of `avr-rust` is based on the dev channel:
 
 ```
-XARGO_RUST_SRC=/path/to/avr-rust rustup run avr-toolchain xargo build --target avr-atmega328p --release --verbose
+XARGO_RUST_SRC=/path/to/avr-rust rustup run avr-toolchain xargo build --target avr-atmega328p --release
 ```
