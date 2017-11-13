@@ -1,4 +1,4 @@
-#![feature(lang_items, unwind_attributes)]
+#![feature(asm, lang_items, unwind_attributes)]
 
 #![no_std]
 #![no_main]
@@ -28,7 +28,9 @@ pub extern fn main() {
 
 /// A small busy loop.
 fn small_delay() {
-    for _ in 0..10000 { }
+    for _ in 0..400000 {
+        unsafe { asm!("" :::: "volatile")}
+    }
 }
 
 // These do not need to be in a module, but we group them here for clarity.
