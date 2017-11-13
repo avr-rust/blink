@@ -1,5 +1,4 @@
-#![feature(lang_items, unwind_attributes)]
-#![feature(asm)]
+#![feature(asm, lang_items, unwind_attributes)]
 
 #![no_std]
 #![no_main]
