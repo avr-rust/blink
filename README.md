@@ -10,15 +10,21 @@ Designed for the ATmega328p.
 
 # Usage
 
+There are a few environment variables that need to be set first:
+
+```bash
+# Needed until https://github.com/japaric/xargo/pull/205 goes through,
+# to tell it where to find avr-atmega328p.json:
+export RUST_TARGET_PATH=`pwd`
+
+# Likely needed if you've just compiled avr-rust from source:
+export XARGO_RUST_SRC=/path/to/avr/rust
+```
+
+Now to build, run:
+
 ```bash
 rustup run avr-toolchain xargo build --target avr-atmega328p --release
 
-# there is now an ELF file at target/atmega328p/release/blink.elf
 ```
-
-You may need to invoke the build like this instead, as the current
-version of `avr-rust` is based on the dev channel:
-
-```
-XARGO_RUST_SRC=/path/to/avr-rust rustup run avr-toolchain xargo build --target avr-atmega328p --release
-```
+There should now be an ELF file at `target/atmega328p/release/blink.elf`.
