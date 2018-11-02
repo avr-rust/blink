@@ -1,14 +1,14 @@
-[root]
+[[package]]
+name = "arduino"
+version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+
+[[package]]
 name = "blink"
 version = "0.1.0"
 dependencies = [
  "arduino 0.1.0 (registry+https://github.com/rust-lang/crates.io-index)",
 ]
-
-[[package]]
-name = "arduino"
-version = "0.1.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
 
 [metadata]
 "checksum arduino 0.1.0 (registry+https://github.com/rust-lang/crates.io-index)" = "db5cbf8c970564dcc5e184f1cddb477fda62a55adba8a88301336cea87eb4a83"
