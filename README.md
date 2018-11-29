@@ -18,7 +18,8 @@ There are a few environment variables that need to be set first:
 export RUST_TARGET_PATH=`pwd`
 
 # Likely needed if you've just compiled avr-rust from source:
-export XARGO_RUST_SRC=/path/to/avr/rust
+export XARGO_RUST_SRC=/path_to_avr_rust/src
+# (e.g. :if you built from sources and typed `git clone https://github.com/avr-rust/rust.git` in `~/avr-rust`, this would be `~/avr-rust/rust/src)
 ```
 
 Now to build, run:
