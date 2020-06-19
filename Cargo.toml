@@ -4,4 +4,4 @@ version = "0.1.0"
 authors = ["Dylan McKay <me@dylanmckay.io>"]
 
 [dependencies]
-arduino = "0.1"
+ruduino = "0.2"
