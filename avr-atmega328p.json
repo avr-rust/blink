@@ -12,6 +12,7 @@
   "os": "unknown",
   "position-independent-executables": false,
   "exe-suffix": ".elf",
+  "eh-frame-header": false,
   "pre-link-args": {
     "gcc": [
       "-Os",
