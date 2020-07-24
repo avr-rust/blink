@@ -21,7 +21,7 @@ Designed for the ATmega328p.
 Now to build, run:
 
 ```bash
-cargo override set nightly
+rustup override set nightly
 
 # Compile the crate to an ELF executable.
 cargo build -Z build-std=core --target avr-atmega328p.json --release
