@@ -34,3 +34,4 @@ can be flashed directly to an AVR microcontroller or ran inside a simulator.
 ## Resources
 
   * The [AVR-Rust book](https://book.avr-rust.com)
+
