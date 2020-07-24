@@ -8,24 +8,29 @@ Designed for the ATmega328p.
 
 [How to set up a cross compiler](https://github.com/avr-rust/rust)
 
-# Usage
+## Prerequisites
 
-There are a few environment variables that need to be set first:
+  * A recent version of he nightly Rust compiler. Anything including or greater than `rustc 1.47.0-nightly (0820e54a8 2020-07-23)` can be used.
+  * The rust-src rustup component - `$ rustup component add rust-src`
+  * AVR-GCC on the system for linking
+  * AVR-Libc on the system for support libraries
 
-```bash
-# Needed until https://github.com/japaric/xargo/pull/205 goes through,
-# to tell it where to find avr-atmega328p.json:
-export RUST_TARGET_PATH=`pwd`
+## Usage
 
-# Likely needed if you've just compiled avr-rust from source:
-export XARGO_RUST_SRC=/path_to_avr_rust/src
-# (e.g. :if you built from sources and typed `git clone https://github.com/avr-rust/rust.git` in `~/avr-rust`, this would be `~/avr-rust/rust/src)
-```
 
 Now to build, run:
 
 ```bash
-rustup run avr-toolchain xargo build --target avr-atmega328p --release
+cargo override set nightly
+
+# Compile the crate to an ELF executable.
+cargo build -Z build-std=core --target avr-atmega328p.json --release
 
 ```
-There should now be an ELF file at `target/atmega328p/release/blink.elf`.
+There should now be an ELF file at `target/avr-atmega328p/release/blink.elf`. It
+can be flashed directly to an AVR microcontroller or ran inside a simulator.
+
+
+## Resources
+
+  * The [AVR-Rust book](https://book.avr-rust.com)
