@@ -7,12 +7,18 @@ on:
     branches: [ master ]
   schedule:
   - cron: "0 2 * * 1-5"
-    
+
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
     - uses: actions/checkout@v2
-    - name: Compile the blink crate with Rust nightly
-      run: docker build . --file Dockerfile.ci --tag avr-rust/blink.ci:$(date +%s)
+    - name: Prepare the AVR Rust build environment
+      run:
+        docker build . --file Dockerfile.ci --tag avr-rust/blink.ci:$GITHUB_RUN_NUMBER
+
+    - name: Compile the crate
+      run:
+        docker run avr-rust/blink.ci:$GITHUB_RUN_NUMBER
+
