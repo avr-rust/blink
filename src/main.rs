@@ -3,8 +3,6 @@
 #![no_std]
 #![no_main]
 
-extern crate ruduino;
-
 use ruduino::cores::atmega328 as avr_core;
 use ruduino::Register;
 
