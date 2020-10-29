@@ -6,7 +6,7 @@ The program itself toggles a LED on PORTB periodically.
 
 Designed for the ATmega328p.
 
-[How to set up a cross compiler](https://github.com/avr-rust/rust)
+[The AVR-Rust Book](https://book.avr-rust.com/)
 
 ## Prerequisites
 
