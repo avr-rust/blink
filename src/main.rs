@@ -3,22 +3,19 @@
 #![no_std]
 #![no_main]
 
-use ruduino::Register;
-use ruduino::cores::current::{DDRB, PORTB};
+use ruduino::Pin;
+use ruduino::cores::current::{port};
 
 #[no_mangle]
 pub extern fn main() {
-    // Set all PORTB pins up as outputs
-    DDRB::set_mask_raw(0xFFu8);
+    port::B5::set_output();
 
     loop {
-        // Set all pins on PORTB to high.
-        PORTB::set_mask_raw(0xFF);
+        port::B5::set_high();
 
         ruduino::delay::delay_ms(1000);
 
-        // Set all pins on PORTB to low.
-        PORTB::unset_mask_raw(0xFF);
+        port::B5::set_low();
 
         ruduino::delay::delay_ms(1000);
     }
