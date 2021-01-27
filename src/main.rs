@@ -3,7 +3,7 @@
 #![no_std]
 #![no_main]
 
-use ruduino::cores::atmega328 as avr_core;
+use ruduino::cores::atmega328p as avr_core;
 use ruduino::Register;
 
 use avr_core::{DDRB, PORTB};
@@ -28,7 +28,7 @@ pub extern fn main() {
 
 /// A small busy loop.
 fn small_delay() {
-    for _ in 0..400000 {
+    for _ in 0..4000 {
         unsafe { llvm_asm!("" :::: "volatile")}
     }
 }
