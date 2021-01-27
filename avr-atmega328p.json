@@ -17,7 +17,7 @@
     "gcc": ["-mmcu=atmega328p"]
   },
   "late-link-args": {
-    "gcc": ["-lgcc"]
+    "gcc": ["-lgcc", "-lc"]
   },
   "target-c-int-width": "16",
   "target-endian": "little",
