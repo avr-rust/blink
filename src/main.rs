@@ -3,10 +3,8 @@
 #![no_std]
 #![no_main]
 
-use ruduino::cores::atmega328p as avr_core;
 use ruduino::Register;
-
-use avr_core::{DDRB, PORTB};
+use ruduino::cores::current::{DDRB, PORTB};
 
 #[no_mangle]
 pub extern fn main() {
