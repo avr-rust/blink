@@ -15,18 +15,11 @@ pub extern fn main() {
         // Set all pins on PORTB to high.
         PORTB::set_mask_raw(0xFF);
 
-        small_delay();
+        ruduino::delay::delay_ms(1000);
 
         // Set all pins on PORTB to low.
         PORTB::unset_mask_raw(0xFF);
 
-        small_delay();
-    }
-}
-
-/// A small busy loop.
-fn small_delay() {
-    for _ in 0..4000 {
-        unsafe { llvm_asm!("" :::: "volatile")}
+        ruduino::delay::delay_ms(1000);
     }
 }
