@@ -1,0 +1,5 @@
+# TODO: Remove this file once issue #29 is resolved upstream
+# Upstream: https://github.com/rust-lang/compiler-builtins/issues/400
+[toolchain]
+channel    = "nightly-2021-01-07"
+components = ["rust-src"]
