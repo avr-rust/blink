@@ -5,7 +5,7 @@ authors = ["Dylan McKay <me@dylanmckay.io>"]
 edition = '2018'
 
 [dependencies]
-ruduino = "0.3"
+ruduino = {  git = "https://github.com/avr-rust/ruduino", branch = "master" }
 
 [profile.release]
 lto = true

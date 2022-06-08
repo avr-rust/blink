@@ -31,9 +31,8 @@ checksum = "839920177137ff472f3c35abf5b8166f331c6cf7f2dfa7ffd69f9aa7dc70b526"
 
 [[package]]
 name = "avr_delay"
-version = "0.3.2"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "3240ca4376ed463b9636c8363dc9b6bc2a76f92f73c6ea52701c28fabf6ef7d7"
+version = "0.4.0"
+source = "git+https://github.com/avr-rust/delay#cfe9848f82b3c3e479cb5dc7a30e24152468030a"
 dependencies = [
  "avr-config",
 ]
@@ -97,9 +96,8 @@ dependencies = [
 
 [[package]]
 name = "ruduino"
-version = "0.3.2"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "610b9f011d3b54ce8ec022969303ce48baaf10a4f91eaf785012038de5997c17"
+version = "0.4.0"
+source = "git+https://github.com/avr-rust/ruduino?branch=master#a33d38a7554f2c362fcfb54044d204c19fd9ac1a"
 dependencies = [
  "avr-config",
  "avr-mcu",
