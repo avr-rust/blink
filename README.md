@@ -29,6 +29,10 @@ export AVR_CPU_FREQUENCY_HZ=16000000
 # Compile the crate to an ELF executable.
 cargo build -Z build-std=core --target avr-atmega328p.json --release
 
+# Note: there is work in progress to make that easier
+#       peeking in .cargo/config.tom  will show that
+#            cargo build --release
+#       is the short version
 ```
 There should now be an ELF file at `target/avr-atmega328p/release/blink.elf`. It
 can be flashed directly to an AVR microcontroller or ran inside a simulator.
