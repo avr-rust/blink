@@ -22,8 +22,6 @@ Designed for the ATmega328p.
 Now to build, run:
 
 ```bash
-rustup override set nightly
-
 # Ensure time delays are consistent with a 16MHz microcontroller.
 export AVR_CPU_FREQUENCY_HZ=16000000
 
