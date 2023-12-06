@@ -8,4 +8,6 @@ edition = '2018'
 ruduino = {  git = "https://github.com/avr-rust/ruduino", branch = "master" }
 
 [profile.release]
+opt-level = 'z'
 lto = true
+strip = true
