@@ -6,7 +6,7 @@ The program itself toggles a LED on PORTB periodically.
 
 Designed for the ATmega328p.
 
-[The AVR-Rust Book](https://book.avr-rust.com/)
+[The AVR-Rust Book](https://book.avr-rust.org/)
 
 ## Prerequisites
 
@@ -41,5 +41,5 @@ can be flashed directly to an AVR microcontroller or ran inside a simulator.
 
 ## Resources
 
-  * The [AVR-Rust book](https://book.avr-rust.com)
+  * The [AVR-Rust book](https://book.avr-rust.org)
 
